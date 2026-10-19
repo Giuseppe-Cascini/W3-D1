@@ -159,6 +159,9 @@ console.log(nuovoOggetto);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+utenti.forEach((utente) => {
+    console.log(`- ${utente.nome} ${utente.cognome} (${utente.città})`)
+});
 
 /* ESERCIZIO 8 — map a stringhe
    Usa map per creare nomiCompleti = ["Mario Rossi", "Anna Bianchi", ...].
