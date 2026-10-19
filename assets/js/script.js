@@ -149,6 +149,9 @@ console.log(cibo);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+const prodotto = { nome: "Cuffie", prezzo: 79.99 };
+const nuovoOggetto = {...prodotto, disponibile:true};
+console.log(nuovoOggetto);
 
 /* ESERCIZIO 7 — forEach
    Stampa tutti gli utenti nel formato "- Nome Cognome (città)".
