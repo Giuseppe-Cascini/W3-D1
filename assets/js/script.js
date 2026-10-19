@@ -104,6 +104,19 @@ console.log(eta);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+const riepilogo = ({nome, cognome, eta}) => {
+    return `${nome} ${cognome} ${eta} anni`
+}
+console.log(riepilogo(utenti[0]));
+console.log(riepilogo(utenti[1]));
+console.log(riepilogo(utenti[2]));
+
+/* forma compatta
+const riepilogo = ({nome, cognome, eta}) =>
+    `${nome} ${cognome} ${eta} anni`;
+console.log(riepilogo(utenti[0]));
+console.log(riepilogo(utenti[1]));
+console.log(riepilogo(utenti[2]));
 
 /* ESERCIZIO 4 — Spread su array
    Crea numeri = [1, 2, 3].
