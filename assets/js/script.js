@@ -137,6 +137,10 @@ console.log(copia);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+const frutti  = ["mela", "banana"];
+const verdure = ["carota", "spinaci"];
+const cibo = [...frutti, ...verdure]
+console.log(cibo);
 
 /* ESERCIZIO 6 — Spread su oggetto
    prodotto = { nome: "Cuffie", prezzo: 79.99 }
