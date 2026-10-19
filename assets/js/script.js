@@ -216,6 +216,8 @@ console.log(maggiorenniMi);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+const utenteTrovato = utenti.find(utenti => utenti.id ===4)
+console.log(utenteTrovato);
 
 /* ESERCIZIO 13 — reduce
    a) Usa reduce per calcolare l'età media (somma età / numero utenti). Stampa.
