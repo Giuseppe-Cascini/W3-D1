@@ -271,3 +271,8 @@ console.log(nomiAlfabeticamente);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+const catena = utenti
+	.filter((utente) => utente.attivo === true)
+	.map((utente) =>`${utente.nome} ${utente.cognome}`)
+	.sort()
+    console.log(catena);
