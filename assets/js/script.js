@@ -197,7 +197,8 @@ console.log(utentiPlus[0]);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-
+const attivi = utenti.filter (utenti => utenti.attivo=== true) 
+console.log(attivi);
 
 /* ESERCIZIO 11 — filter combinato
    Usa filter per ottenere solo gli utenti maggiorenni (eta >= 18) che vivono a Milano.
