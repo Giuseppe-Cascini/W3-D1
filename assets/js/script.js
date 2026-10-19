@@ -86,6 +86,16 @@ console.log(quadrato(5))
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+const persona = {
+    nome:'Filippo',
+    cognome:'Rossi',
+    eta:23,
+    citta:'Roma'
+}
+const {nome, cognome, eta} = persona;
+console.log(nome);
+console.log(cognome);
+console.log(eta);
 
 /* ESERCIZIO 3 — Destructuring nei parametri
    Scrivi una arrow function "riepilogo" che riceve un utente e ritorna
