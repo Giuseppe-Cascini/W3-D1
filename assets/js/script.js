@@ -186,7 +186,7 @@ console.log(nomiCompleti);
 const utentiPlus = utenti.map((utente) => {
     return {
         ...utenti,
-        desrcizione: `${utente.nome} ${utente.cognome} ${utente.città}`
+        desrcizione: `${utente.nome} ${utente.cognome}, ${utente.città}`
     }
 });
 console.log(utentiPlus[0]);
