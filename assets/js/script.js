@@ -125,6 +125,10 @@ console.log(riepilogo(utenti[2]));
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+const numeri = [1, 2, 3];
+const copia = [...numeri, 99];
+console.log(numeri);
+console.log(copia);
 
 /* ESERCIZIO 5 — Spread per concatenare
    frutti  = ["mela", "banana"]
