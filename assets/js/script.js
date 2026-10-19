@@ -64,6 +64,20 @@ const utenti = [
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+const quadrato = n =>  n*n
+console.log(quadrato(5))
+
+/*function quadrato(n) {
+    return n*n;
+}
+console.log(quadrato(5))
+*/
+/* non compatta, però nel nostro caso, poichè c'è solo un return possiamo evitare graffe e return.
+const quadrato = (n) => {
+    return n*n
+} 
+console.log(quadrato(5))
+*/
 
 /* ESERCIZIO 2 — Destructuring di oggetto
    Crea un oggetto "persona" con almeno 4 properties (es. nome, cognome, eta, città).
