@@ -197,7 +197,7 @@ console.log(utentiPlus[0]);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-const attivi = utenti.filter (utenti => utenti.attivo=== true) 
+const attivi = utenti.filter(utenti => utenti.attivo === true)
 console.log(attivi);
 
 /* ESERCIZIO 11 — filter combinato
@@ -206,7 +206,7 @@ console.log(attivi);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-const maggiorenniMi = utenti.filter (utenti => utenti.eta >= 18 && utenti.città === 'Milano') 
+const maggiorenniMi = utenti.filter(utenti => utenti.eta >= 18 && utenti.città === 'Milano')
 console.log(maggiorenniMi);
 
 
@@ -216,7 +216,7 @@ console.log(maggiorenniMi);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-const utenteTrovato = utenti.find(utenti => utenti.id ===4)
+const utenteTrovato = utenti.find(utenti => utenti.id === 4)
 console.log(utenteTrovato);
 
 /* ESERCIZIO 13 — reduce
@@ -225,14 +225,14 @@ console.log(utenteTrovato);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-const sommaEta = utenti.reduce((acc, utente ) => {
+const sommaEta = utenti.reduce((acc, utente) => {
     return acc + utente.eta;
 }, 0);
 const etaMedia = sommaEta / utenti.length
 console.log(etaMedia.toFixed(2));
 const utentiAttivi = utenti.reduce((acc, utente) => {
     if (utente.attivo === true) {
-        return acc +1;
+        return acc + 1;
     }
     return acc;
 }, 0);
@@ -244,6 +244,23 @@ console.log(utentiAttivi);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+const ordinaEta = [...utenti].sort((a, b) => {
+    return a.eta - b.eta;
+});
+console.log(ordinaEta);
+const ordinaUtenti = ordinaEta.map((utente) => {
+    return utente.nome;
+});
+console.log(ordinaUtenti);
+const ordinaNome = [...utenti].sort((a, b) => {
+    return a.nome.localeCompare(b.nome);
+});
+console.log(ordinaNome)
+const nomiAlfabeticamente = ordinaNome.map((utente) => {
+    return utente.nome
+});
+console.log(nomiAlfabeticamente);
+
 
 /* ESERCIZIO 15 — Chaining
    Componi una catena di metodi che:
