@@ -7,54 +7,54 @@
 */
 
 const utenti = [
-	{
-		id: 1,
-		nome: 'Antonio',
-		cognome: 'Rossi',
-		eta: 28,
-		attivo: true,
-		città: 'Milano',
-	},
-	{
-		id: 2,
-		nome: 'Anna',
-		cognome: 'Bianchi',
-		eta: 35,
-		attivo: false,
-		città: 'Roma',
-	},
-	{
-		id: 3,
-		nome: 'Luca',
-		cognome: 'Verdi',
-		eta: 17,
-		attivo: true,
-		città: 'Milano',
-	},
-	{
-		id: 4,
-		nome: 'Sara',
-		cognome: 'Neri',
-		eta: 17,
-		attivo: true,
-		città: 'Torino',
-	},
-	{
-		id: 5,
-		nome: 'Marco',
-		cognome: 'Gialli',
-		eta: 45,
-		attivo: false,
-		città: 'Roma',
-	},
-	{
-		id: 6,
-		nome: 'Chiara',
-		cognome: 'Rosa',
-		eta: 30,
-		attivo: true,
-		città: 'Milano',
-	},
+    {
+        id: 1,
+        nome: 'Antonio',
+        cognome: 'Rossi',
+        eta: 28,
+        attivo: true,
+        città: 'Milano',
+    },
+    {
+        id: 2,
+        nome: 'Anna',
+        cognome: 'Bianchi',
+        eta: 35,
+        attivo: false,
+        città: 'Roma',
+    },
+    {
+        id: 3,
+        nome: 'Luca',
+        cognome: 'Verdi',
+        eta: 17,
+        attivo: true,
+        città: 'Milano',
+    },
+    {
+        id: 4,
+        nome: 'Sara',
+        cognome: 'Neri',
+        eta: 17,
+        attivo: true,
+        città: 'Torino',
+    },
+    {
+        id: 5,
+        nome: 'Marco',
+        cognome: 'Gialli',
+        eta: 45,
+        attivo: false,
+        città: 'Roma',
+    },
+    {
+        id: 6,
+        nome: 'Chiara',
+        cognome: 'Rosa',
+        eta: 30,
+        attivo: true,
+        città: 'Milano',
+    },
 ];
 
 /* ESERCIZIO 1 — Arrow function compatta
@@ -64,7 +64,7 @@ const utenti = [
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-const quadrato = n =>  n*n
+const quadrato = n => n * n
 console.log(quadrato(5))
 
 /*function quadrato(n) {
@@ -87,12 +87,12 @@ console.log(quadrato(5))
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 const persona = {
-    nome:'Filippo',
-    cognome:'Rossi',
-    eta:23,
-    citta:'Roma'
+    nome: 'Filippo',
+    cognome: 'Rossi',
+    eta: 23,
+    citta: 'Roma'
 }
-const {nome, cognome, eta} = persona;
+const { nome, cognome, eta } = persona;
 console.log(nome);
 console.log(cognome);
 console.log(eta);
@@ -104,7 +104,7 @@ console.log(eta);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-const riepilogo = ({nome, cognome, eta}) => {
+const riepilogo = ({ nome, cognome, eta }) => {
     return `${nome} ${cognome} ${eta} anni`
 }
 console.log(riepilogo(utenti[0]));
@@ -137,7 +137,7 @@ console.log(copia);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-const frutti  = ["mela", "banana"];
+const frutti = ["mela", "banana"];
 const verdure = ["carota", "spinaci"];
 const cibo = [...frutti, ...verdure]
 console.log(cibo);
@@ -150,7 +150,7 @@ console.log(cibo);
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 const prodotto = { nome: "Cuffie", prezzo: 79.99 };
-const nuovoOggetto = {...prodotto, disponibile:true};
+const nuovoOggetto = { ...prodotto, disponibile: true };
 console.log(nuovoOggetto);
 
 /* ESERCIZIO 7 — forEach
@@ -171,7 +171,7 @@ utenti.forEach((utente) => {
 /* SCRIVI QUI LA TUA RISPOSTA */
 const nomiCompleti = utenti.map((utente) => {
     return utente.nome + " " + utente.cognome
-})
+});
 console.log(nomiCompleti);
 
 /* ESERCIZIO 9 — map a oggetti
@@ -183,6 +183,13 @@ console.log(nomiCompleti);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+const utentiPlus = utenti.map((utente) => {
+    return {
+        ...utenti,
+        desrcizione: `${utente.nome} ${utente.cognome} ${utente.città}`
+    }
+});
+console.log(utentiPlus[0]);
 
 /* ESERCIZIO 10 — filter attivi
    Usa filter per ottenere solo gli utenti con attivo: true.
@@ -190,6 +197,7 @@ console.log(nomiCompleti);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
 
 /* ESERCIZIO 11 — filter combinato
    Usa filter per ottenere solo gli utenti maggiorenni (eta >= 18) che vivono a Milano.
